@@ -1,6 +1,6 @@
 #SentinelOne Hunt Query (Visibility)
 #@RxUrien - Deepak Sharma
-#Detects post-compromise Log4J activity
+#Detects post-compromise VMWare Horizon Log4J activity
 
 ( ( SrcProcParentImagePath Contains Anycase "VMWare" or SrcProcImagePath Contains Anycase "VMWare") and 
 ( SrcProcParentName In ( "ws_TomcatService.exe" , "node.exe" ) or SrcProcName In ( "ws_TomcatService.exe" , "node.exe" ) ) and 
