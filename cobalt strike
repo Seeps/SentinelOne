@@ -1,0 +1,4 @@
+#SentinelOne Hunt Query (Visibility)
+#@RxUrien - Deepak Sharma
+
+( CmdLine Contains Anycase "JABz" and CmdLine Contains Anycase "AagBwA" )
