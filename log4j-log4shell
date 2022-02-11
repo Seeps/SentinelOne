@@ -1,0 +1,6 @@
+#SentinelOne Hunt Query (Visibility)
+#@RxUrien - Deepak Sharma
+
+( ( SrcProcParentImagePath Contains Anycase "VMWare" or SrcProcImagePath Contains Anycase "VMWare") and 
+( SrcProcParentName In ( "ws_TomcatService.exe" , "node.exe" ) or SrcProcName In ( "ws_TomcatService.exe" , "node.exe" ) ) and 
+( SrcProcName In ( "cmd.exe" , "powershell.exe" ) or TgtProcName In ( "cmd.exe" , "powershell.exe" ) ) )
