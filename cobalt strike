@@ -1,4 +1,5 @@
 #SentinelOne Hunt Query (Visibility)
 #@RxUrien - Deepak Sharma
+#Detects Cobalt Strike PowerShell beacon
 
 ( CmdLine Contains Anycase "JABz" and CmdLine Contains Anycase "AagBwA" )
