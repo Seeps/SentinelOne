@@ -1,0 +1,5 @@
+#SentinelOne Hunt Query (Visibility)
+#@RxUrien - Deepak Sharma
+#Detects post-compromise ProxyShell activity - dropping webshells through PST export cmdlet 'New-MailboxExportRequest' via 'MSExchangeMailboxReplication.exe'
+
+Name = "MSExchangeMailboxReplication.exe" and FilePath Contains Anycase ".aspx"
