@@ -2,4 +2,5 @@
 #@RxUrien - Deepak Sharma
 #Detects all valid base64-encoded values, regardless of length or whether they have been padded with equals signs, filtered to powershell execution -- but can be applied to any process on any platform/operating system
 
-CmdLine RegExp "([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)" and (SrcProcName Contains Anycase "powershell" or TgtProcName Contains Anycase "powershell")
+CmdLine RegExp "([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)" and 
+(SrcProcName Contains Anycase "powershell" or TgtProcName Contains Anycase "powershell")
