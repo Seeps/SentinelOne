@@ -4,7 +4,7 @@ function velociraptor(
     [Parameter(Mandatory = $true)][string]$url
 ) {    
     $TempFolder = ([io.path]::GetTempPath())
-    $VelociraptorMSIPath = Join-Path $TempFolder "Win-CIR_Velociraptor.msi"
+    $VelociraptorMSIPath = Join-Path $TempFolder "Velociraptor.msi"
 
     try {
         $ProgressPreference = 'SilentlyContinue'
