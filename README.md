@@ -5,4 +5,5 @@ The repository contains event hunt queries for SentinelOne (Visibility). Simply 
 
 ## SentinelOne RSO (Remote Script Orchestration)
 Utilize SentinelOne Remote Script Orchestration (RSO) & Automation to deploy Velociraptor
+
 **NOTE**: This script requires a mandatory input for the full URL of the Velociraptor EXE/MSI
